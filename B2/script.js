@@ -4,15 +4,19 @@ const line = document.querySelector(".line");
 document.addEventListener("mousemove", (event) => {
   const circleBox = circle.getBoundingClientRect();
 
+  //Circle Center
   const x = circleBox.left + circleBox.width / 2;
   const y = circleBox.top + circleBox.height / 2;
 
+  //Mouse
   const mx = event.clientX;
   const my = event.clientY;
 
-  const x1 = mx-x;
-  const y1 = my-y;
+  //Differenec
+  const x1 = mx - x;
+  const y1 = my - y;
 
+  //Length and Angle
   const length = Math.hypot(x1, y1);
   const angle = (Math.atan2(y1, x1) * 180) / Math.PI;
 
