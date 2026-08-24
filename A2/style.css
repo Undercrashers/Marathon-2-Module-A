@@ -44,4 +44,4 @@ body {
 
 .icon:has(+ .icon +.icon:hover){
     transform: scale(1.3);
-}`
+}
